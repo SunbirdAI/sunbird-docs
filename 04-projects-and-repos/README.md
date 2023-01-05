@@ -1,6 +1,8 @@
-# Projects and Repos
+# Projects and Repositories
 
-<br/>
+This page provides an organized way to find all of Sunbird AI's repositories for different projects. 
+For a description of the projects (including details about the project aims and execution), please refer to the [Projects](https://sunbird.ai/projects/) page on the [Sunbird AI website](https://sunbird.ai/).
+<br/> <br/>
 
 ## African Language Technology
 #### 1. Language translation
