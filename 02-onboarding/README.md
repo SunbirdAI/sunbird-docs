@@ -1,6 +1,6 @@
-# On-boarding
+# Software Team On-boarding
 
-## 1. Meet the team :book:
+## 1. Meet the team :busts_in_silhouette:
 * A full list of the `Sunbird team` members is available on the Sunbird website [`about page`](https://sunbird.ai/about/#SBteam).
 * The `Software Team` in particular is currently made up of:
    * [Isaac Owomugisha](https://www.linkedin.com/in/owomugisha-isaac-32807912a/) - Technical Lead
@@ -25,16 +25,8 @@ Sunbird uses OKRs to plan, manage and track projects. Our OKRs are discussed and
 Tasks are created from the OKRs mentioned above and the software-related ones are tracked using [`GitHub projects`](https://github.com/orgs/SunbirdAI/projects).
 
 ## 5. Tech stack & tools :computer:
-Sunbird coding projects include Machine Learning (ML) models, data pipelines, backends and frontends.<br/>
-
-**Stacks**:
-  * ML models: `Python` (pandas, numpy, pytorch etc), Jupyter Notebooks and Google Colabs, AWS, HuggingFace
-  * Data pipelines: `Python` (pandas), AWS, GCP, Twilio
-  * Backend: `Python` (Django)
-  * Frontend: `Javascript` (ReactJS)
-
-**Tools/platforms**:<br/>
-We use a number of software platforms/tools that all new software team members will be onboarded onto, including `Google Workspace` (email, calendar, chat, drive), `GitHub`, `AWS`, `GCP` and others (`HuggingFace`, `Weights & Biases`, `Heroku`, `Twilio` etc).
+Sunbird coding projects include Machine Learning (ML) models, backend, frontend and DevOps/MLOps. The main programming languages used are `Python` for ML and backend and `Javascript` for frontend. <br/>
+For a more detailed breakdown of the languages and tech stack (including libraries, frameworks and tools/platforms), please refer to the [`Development Process`](https://github.com/SunbirdAI/sunbird-docs/tree/main/04-development-process) section.
  
 ## 6. Deployment processes :wrench:
 Please refer to the [`Release and Deployment`](https://github.com/SunbirdAI/sunbird-docs/tree/main/05-release-and-deployment#release-and-deployment) section.
