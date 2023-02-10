@@ -68,10 +68,25 @@ Request:
 }
 ```
 
+Option 3:
+
+Endpoint `/translate`
+
+Request:
+```
+{
+   (optional) "source-language": ""
+   "target-language": "",
+   "text": "",
+   (Optional, default: False) "return-confidences": False
+}
+```
+
 Response for both options:
 ```
 {
-   "text": ""
+   "text": "",
+   (optional) confidences: [1, 0.5, 0.67]
 }
 ```
 
@@ -81,7 +96,8 @@ Endpoint: `/tts`.
 Request:
 ```
 {
-   "text": ""
+   "text": "",
+   (optional) "language": ""
 }
 ```
 
@@ -99,14 +115,16 @@ Request:
 ```
 {
    "audio": "",
-   "language": ""
+   "language": "",
+   (Optional, default: False) "return-confidences": False
 }
 ```
 
 Response:
 ```
 {
-   "text": ""
+   "text": "",
+   (optional) confidences: [1, 0.5, 0.67]
 }
 ```
 
@@ -115,6 +133,15 @@ Response:
 
 
 ### Technologies
+**API Framework**: [FastAPI](https://fastapi.tiangolo.com/)
+
+**Authentication and User Management**: OAuth or  [AWS Cognito]()
+
+**Model deployment**:
+- HuggingFace
+- AWS (Sagemaker)
+- Google Cloud (Vertex.ai)
+
 
 ### Database structure
 
