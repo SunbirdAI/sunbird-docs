@@ -128,30 +128,37 @@ Response:
 }
 ```
 
-#### General endpoint
-**TBD**
-
-
-### Technologies
+### Technologies used
 **API Framework**: [FastAPI](https://fastapi.tiangolo.com/)
 
-**Authentication and User Management**: OAuth or  [AWS Cognito]()
+**Authentication and User Management**: JWT Tokens
 
-**Model deployment**:
-- HuggingFace
-- AWS (Sagemaker)
-- Google Cloud (Vertex.ai)
+**Model deployment**: Google Cloud (Vertex AI)
 
+
+### Code structure
+The user-facing API is organized by concept (rather than by functionality). It may be a good idea to change it to organize it by functionality in case the codebase gets larger in the future.
+
+The folder structure is as follows (you can follow the official FastAPI tutorials for the rationale behind this organization):
+```
+app
+   
+```
 
 ### Database structure
+There are 2 main tables in the database: Monitoring and User.
 
+Monitoring table columns: id, username, organization, endpoint, time_taken, date
 
-## Alternative solutions
+User table columns: id, email, username, hashed_password, organization, account_type.
 
-## Testing
+### Monitoring
+Monitoring is done through a FastAPI middleware function. For each (task) request that comes in, we log the endpoint accessed, the user that accessed it, and how long the request took.
 
-## Monitoring
+This data is then visualized on this [Looker Studio dashboard](https://lookerstudio.google.com/reporting/ee90ea18-3799-4787-a922-374947be049c).
 
-## Alerting
+### Rate Limiting
+Rate limiting is done through [FastAPILimiter](https://github.com/long2ice/fastapi-limiter) and is backed by a Redis instance hosted on GCP.
 
-## Tasks and scope
+### Deployment
+Checkout the [deployment guide](https://github.com/SunbirdAI/sunbird-ai-api/blob/main/api-deployment-docs.md) for more details.
