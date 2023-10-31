@@ -1,6 +1,6 @@
 # API Framework design document
 
-## Introduction
+### Introduction
 The API Framework is a set of APIs that provide access to Sunbird's machine learning models.
 
 Current Models:
@@ -10,7 +10,7 @@ Current Models:
 
 The framework should provide an intuitive way for developers to use the different models we have.
 
-## Requirements
+### Requirements
 1. General requirements for all endpoints
    1. Structure should be intuitive.
    2. Validation
@@ -37,39 +37,18 @@ The framework should provide an intuitive way for developers to use the differen
 8. Python package wrapper around the API (low priority)
    1. A python package that provides programmatic access to the API through python functions.
 
-## Architecture
+### Architecture
 ![architecture image](./images/API-framework-arch.png)
+
+There are 2 main services:
+**User-facing API**: This provides endpoints that the end users of the API access. It has the endpoints for translation, STT and TTS.
+It also contains user management and monitoring.
+
+**Inference Server**: This is where the actual models are hosted. It's a flask app that fetches the models from HuggingFace and makes them available via an endpoint. It's hosted on Vertex AI.
+
 ### Endpoint structure
 
 #### Translation endpoints
-Option 1:
-```
-/english-to-local
-{
-   "text": "",
-   "target-language": ""
-}
-
-/local-to-english
-{
-   "text": ""
-}
-```
-
-Option 2:
-Endpoint: `/translate`
-
-Request:
-```
-{
-    "type": "english-to-local",
-    "text": "",
-    "target-language": ""
-}
-```
-
-Option 3:
-
 Endpoint `/translate`
 
 Request:
@@ -142,15 +121,44 @@ The user-facing API is organized by concept (rather than by functionality). It m
 The folder structure is as follows (you can follow the official FastAPI tutorials for the rationale behind this organization):
 ```
 app
-   
+   alembic:             contains migration files.
+   crud:                contains functions for writing to the database.
+   inference_services:  contains code for interacting with the inference server.
+   middleware:          contains middleware functions (e.g for monitoring)
+   models:              contains database models
+   routers:             contains FastAPI routers that handle user requests.
+   schemas:             contains Pydantic models for defining rules for data (useful e.g for validation)
+   static:              contains static assets such as images and css for the frontend
+   templates:           contains HTML template files.
+   tests:               tests for the API.
+   utils:               contains utility functions
+   api.py :             entry point to the API.
+   deps.py :            defines any FastAPI dependencies (e.g DB dependency)
+   docs.py :            contains the introductory documentation for the API.
 ```
 
 ### Database structure
 There are 2 main tables in the database: Monitoring and User.
 
-Monitoring table columns: id, username, organization, endpoint, time_taken, date
+Monitoring table columns: 
+```
+id
+username
+organization
+endpoint
+time_taken
+date
+```
 
-User table columns: id, email, username, hashed_password, organization, account_type.
+User table columns: 
+```
+id
+email
+username
+hashed_password
+organization
+account_type
+```
 
 ### Monitoring
 Monitoring is done through a FastAPI middleware function. For each (task) request that comes in, we log the endpoint accessed, the user that accessed it, and how long the request took.
