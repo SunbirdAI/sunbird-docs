@@ -41,6 +41,7 @@ The framework should provide an intuitive way for developers to use the differen
 ![architecture image](./images/API-framework-arch.png)
 
 There are 2 main services:
+
 **User-facing API**: This provides endpoints that the end users of the API access. It has the endpoints for translation, STT and TTS.
 It also contains user management and monitoring.
 
