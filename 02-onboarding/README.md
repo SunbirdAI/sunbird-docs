@@ -2,10 +2,6 @@
 
 ## 1. Meet the team :busts_in_silhouette:
 * A full list of the `Sunbird team` members is available on the Sunbird website [`about page`](https://sunbird.ai/about/#SBteam).
-* The `Software Team` in particular is currently made up of:
-   * [Isaac Owomugisha](https://www.linkedin.com/in/owomugisha-isaac-32807912a/) - Technical Lead
-   * [Benjamin Akera](https://www.linkedin.com/in/akera-benjamin-2488188a/)
-   * [Lydia Sanyu Naggayi](https://www.linkedin.com/in/lydia-sanyu-naggayi-a664b098/)
 
 ## 2. Meetings :calendar:
 * Meetings are generally held every Monday, Wendesday and Friday, as detailed below: 
