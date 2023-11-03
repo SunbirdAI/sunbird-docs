@@ -41,15 +41,11 @@
     <td>Embedded Systems Engineer</td>
   </tr>
   <tr>
-    <td>Nasser Kawesa</td>
-    <td>Embedded Systems Engineer</td>
-  </tr>
-  <tr>
     <td>Lillian Nabukeera</td>
     <td>Administration Manager</td>
   </tr>
   <tr>
-    <td>Jimmy Mpabanoi</td>
+    <td>Jimmy Mpabanobi</td>
     <td>Finance Manager</td>
   </tr>
   <tr>
@@ -59,6 +55,14 @@
   <tr>
     <td>Daphine Nkunda</td>
     <td>Comms & Engagement Lead</td>
+  </tr>
+  <tr>
+    <td>Sharon Ibejih</td>
+    <td>Machine Learning Fellow</td>
+  </tr>
+   <tr>
+    <td>Mahlet Taye</td>
+    <td>Machine Learning Fellow</td>
   </tr>
 </table>
 
