@@ -5,10 +5,6 @@
     <th>Role</th>
   </tr>
   <tr>
-    <td>Benjamin Akera</td>
-    <td>Software Engineer</td>
-  </tr>
-  <tr>
     <td>Engineer Bainomugisha</td>
     <td>Director</td>
   </tr>
@@ -16,41 +12,49 @@
     <td>Ernest Mwebaze</td>
     <td>Executive Director</td>
   </tr>
-  <tr>
-    <td>Isaac Owomugisha</td>
-    <td>Software Engineer</td>
-  </tr>
-  <tr>
-    <td>Jimmy Mpabanoi</td>
-    <td>Finance Manager</td>
-  </tr>
-  <tr>
-    <td>Joel Tibabwetiza Muhanguzi</td>
-    <td>Embedded Systems Engineer</td>
-  </tr>
-  <tr>
+   <tr>
     <td>John Quinn</td>
     <td>Director</td>
   </tr>
   <tr>
-    <td>Lillian Nabukeera</td>
-    <td>Administration Manager</td>
+    <td>Benjamin Akera</td>
+    <td>Software Engineer</td>
+  </tr>
+  <tr>
+    <td>Ali Zawahry</td>
+    <td>Machine Learning Engineer</td>
+  </tr>
+  <tr>
+    <td>Isaac Owomugisha</td>
+    <td>Software Engineer</td>
   </tr>
   <tr>
     <td>Lydia Sanyu Naggayi</td>
     <td>Software Engineer</td>
   </tr>
   <tr>
+    <td>Solomon Nsumba</td>
+    <td>Software Engineer</td>
+  </tr>
+  <tr>
+    <td>Joel Tibabwetiza Muhanguzi</td>
+    <td>Embedded Systems Engineer</td>
+  </tr>
+  <tr>
     <td>Nasser Kawesa</td>
     <td>Embedded Systems Engineer</td>
   </tr>
   <tr>
-    <td>Peace Tumuheki</td>
-    <td>Operations Manager</td>
+    <td>Lillian Nabukeera</td>
+    <td>Administration Manager</td>
   </tr>
   <tr>
-    <td>Solomon Nsumba</td>
-    <td>Software Engineer</td>
+    <td>Jimmy Mpabanoi</td>
+    <td>Finance Manager</td>
+  </tr>
+  <tr>
+    <td>Peace Tumuheki</td>
+    <td>Operations Manager</td>
   </tr>
   <tr>
     <td>Daphine Nkunda</td>
