@@ -1,3 +1,11 @@
+---
+id: sb-team
+title: Sunbird Team
+tags:
+  - team
+  - sb-core
+---
+
 # Sunbird Team
 <table>
   <tr>
