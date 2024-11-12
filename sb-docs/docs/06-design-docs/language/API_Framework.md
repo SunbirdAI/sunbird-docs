@@ -1,4 +1,4 @@
-# API Framework design document
+# API Framework Design Document
 
 ### Introduction
 The API Framework is a set of APIs that provide access to Sunbird's machine learning models.
@@ -39,7 +39,7 @@ The framework should provide an intuitive way for developers to use the differen
 
 ### Architecture
 
-See the architecture framework and design [here](https://github.com/SunbirdAI/sunbird-ai-api/tree/main/docs).
+See the architecture framework and design [here](./API_Architecture_Documentation.md).
 
 
 ### Code structure
