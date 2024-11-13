@@ -7,10 +7,10 @@ For a description of the projects (including details about the project aims and 
 ## African Language Technology
 #### 1. Language translation
   - [Translation portal (front end) - ReactJS](https://github.com/SunbirdAI/translation-portal-react)
-  - [Translation portal (front end) - Javascript _(deprecated)_](https://github.com/SunbirdAI/translation-portal)
   - [Exploratory analysis, data preparation & training](https://github.com/SunbirdAI/parallel-text-EDA)
   - [SALT Dataset](https://github.com/SunbirdAI/salt)  
-  - [SALT Inference server](https://github.com/SunbirdAI/salt-api) and [related code](https://github.com/SunbirdAI/salt-misc)
+  - [Sunbird AI SALT Inference server](https://github.com/SunbirdAI/sunbirdai-model-inferences)
+  - [Sunbird AI API](https://github.com/SunbirdAI/sunbird-ai-api)
   - Datasets related to the use of [HuggingFace](https://huggingface.co/):
        - [Sunbird HuggingFace datasets](https://github.com/SunbirdAI/datasets)
        - [Test datasets](https://github.com/SunbirdAI/toy-hf-datasets)

@@ -29,16 +29,16 @@ tags:
     <td>Software Engineer</td>
   </tr>
   <tr>
-    <td>Ali Zawahry</td>
-    <td>Machine Learning Engineer</td>
+    <td>Evelyn Nafula</td>
+    <td>Machine Learning Fellow</td>
   </tr>
   <tr>
-    <td>Isaac Owomugisha</td>
+    <td>Patrick Walukagga</td>
     <td>Software Engineer</td>
   </tr>
   <tr>
-    <td>Lydia Sanyu Naggayi</td>
-    <td>Software Engineer</td>
+    <td>Rahman Sanya</td>
+    <td>Research Fellow</td>
   </tr>
   <tr>
     <td>Solomon Nsumba</td>
@@ -65,12 +65,16 @@ tags:
     <td>Comms & Engagement Lead</td>
   </tr>
   <tr>
-    <td>Sharon Ibejih</td>
-    <td>Machine Learning Fellow</td>
+    <td>Paul Mugisha</td>
+    <td>Project Associate</td>
+  </tr>
+  <tr>
+    <td>Gilbert Yiga</td>
+    <td>Software Engineer</td>
   </tr>
    <tr>
-    <td>Mahlet Taye</td>
-    <td>Machine Learning Fellow</td>
+    <td>IMRAN SEKALALA</td>
+    <td>Data Science Fellow</td>
   </tr>
 </table>
 

@@ -25,12 +25,12 @@ Software projects fall into four main categories: `Machine Learning (ML) models`
 
 **Tech Stacks**:
   * ML models: `Python` (pandas, numpy, pytorch etc), Jupyter Notebooks and Google Colabs
-  * Backend: `Python` (Django)
+  * Backend: `Python` (Django, FastAPI)
   * Frontend: `Javascript` (ReactJS)
   * DevOps/MLOps: `Python` (pandas), AWS (S3, Lambda, API Gateway, IoT, Sagemaker), GCP, Twilio, HuggingFace
 
 **Tools/Platforms**:<br/>
-We use a number of software platforms/tools that all new software team members will be onboarded onto, including `Google Workspace` (email, calendar, chat, drive), `GitHub`, `AWS`, `GCP` and others (`HuggingFace`, `Weights & Biases`, `Heroku`, `Twilio` etc).
+We use a number of software platforms/tools that all new software team members will be onboarded onto, including `Google Workspace` (email, calendar, chat, drive), `GitHub`, `AWS`, `GCP`, `Heroku`, and others (`HuggingFace`, `Weights & Biases`, `Heroku`, `Twilio` etc).
 
 ### 3. Coding, collaboration and review
 We use [`GitHub`](https://github.com/SunbirdAI) to store and track our coding work.<br/><br/>

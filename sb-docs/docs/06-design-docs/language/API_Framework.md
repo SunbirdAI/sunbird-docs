@@ -1,4 +1,4 @@
-# API Framework design document
+# API Framework Design Document
 
 ### Introduction
 The API Framework is a set of APIs that provide access to Sunbird's machine learning models.
@@ -38,82 +38,8 @@ The framework should provide an intuitive way for developers to use the differen
    1. A python package that provides programmatic access to the API through python functions.
 
 ### Architecture
-![architecture image](./images/API-framework-arch.png)
 
-There are 2 main services:
-
-**User-facing API**: This provides endpoints that the end users of the API access. It has the endpoints for translation, STT and TTS.
-It also contains user management and monitoring.
-
-**Inference Server**: This is where the actual models are hosted. It's a flask app that fetches the models from HuggingFace and makes them available via an endpoint. It's hosted on Vertex AI.
-
-### Endpoint structure
-
-#### Translation endpoints
-Endpoint `/translate`
-
-Request:
-```
-{
-   (optional) "source-language": ""
-   "target-language": "",
-   "text": "",
-   (Optional, default: False) "return-confidences": False
-}
-```
-
-Response for both options:
-```
-{
-   "text": "",
-   (optional) confidences: [1, 0.5, 0.67]
-}
-```
-
-#### Text-to-speech
-Endpoint: `/tts`.
-
-Request:
-```
-{
-   "text": "",
-   (optional) "language": ""
-}
-```
-
-Response (how to send/receive audio. File or audio stream):
-```
-{
-   "audio": 
-}
-```
-
-#### Speech-to-text
-Endpoint: `/stt`
-
-Request:
-```
-{
-   "audio": "",
-   "language": "",
-   (Optional, default: False) "return-confidences": False
-}
-```
-
-Response:
-```
-{
-   "text": "",
-   (optional) confidences: [1, 0.5, 0.67]
-}
-```
-
-### Technologies used
-**API Framework**: [FastAPI](https://fastapi.tiangolo.com/)
-
-**Authentication and User Management**: JWT Tokens
-
-**Model deployment**: Google Cloud (Vertex AI)
+See the architecture framework and design [here](./API_Architecture_Documentation.md).
 
 
 ### Code structure
@@ -164,10 +90,8 @@ account_type
 ### Monitoring
 Monitoring is done through a FastAPI middleware function. For each (task) request that comes in, we log the endpoint accessed, the user that accessed it, and how long the request took.
 
-This data is then visualized on this [Looker Studio dashboard](https://lookerstudio.google.com/reporting/ee90ea18-3799-4787-a922-374947be049c).
+This data is then visualized on this [Grafana dashboard](https://sunbirdaiapi.grafana.net/public-dashboards/5ad7c8544b384609b3ed3c85c89fff1f?from=now-30d&to=now&timezone=browser&refresh=1h&theme=light&orgId=1).
 
-### Rate Limiting
-Rate limiting is done through [FastAPILimiter](https://github.com/long2ice/fastapi-limiter) and is backed by a Redis instance hosted on GCP.
 
 ### Deployment
 Checkout the [deployment guide](https://github.com/SunbirdAI/sunbird-ai-api/blob/main/api-deployment-docs.md) for more details.
