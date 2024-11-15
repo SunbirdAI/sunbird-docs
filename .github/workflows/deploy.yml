@@ -23,6 +23,13 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Debug Environment Variables
+        run: |
+          echo "FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY }}"
+          echo "FIREBASE_AUTH_DOMAIN=${{ secrets.FIREBASE_AUTH_DOMAIN }}"
+          echo "FIREBASE_PROJECT_ID=${{ secrets.FIREBASE_PROJECT_ID }}"
+          echo "FIREBASE_STORAGE_BUCKET=${{ secrets.FIREBASE_STORAGE_BUCKET }}"
         
       - name: Build website
         env:
