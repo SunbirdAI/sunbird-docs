@@ -74,10 +74,7 @@ customFields: {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/sunbird-card.png',
-    colorMode: {
-      defaultMode: 'dark', // Set dark mode as default
-      disableSwitch: false, // Optional: Allow users to toggle between dark and light modes
-    },
+   
     navbar: {
       title: 'Sunbird AI',
       logo: {
