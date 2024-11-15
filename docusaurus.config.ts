@@ -58,7 +58,7 @@ const config: Config = {
   plugins: [[
     "docusaurus2-dotenv",
       {
-        path: "./.env",
+        //path: "./.env",
       systemvars: true
     }
   ]],
