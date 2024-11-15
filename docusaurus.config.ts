@@ -66,7 +66,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/sunbird-card.png',
-   
+
     navbar: {
       title: 'Sunbird AI',
       logo: {
