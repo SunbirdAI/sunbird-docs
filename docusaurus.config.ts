@@ -1,20 +1,12 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import 'dotenv/config';
 
 const config: Config = {
   title: 'Sunbird AI',
   tagline: 'Artificial intelligence with social impact',
   favicon: 'img/favicon.ico',
-customFields: {
-  FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
-  FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN,
-  FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID,
-  FIREBASE_STORAGE_BUCKET: process.env.FIREBASE_STORAGE_BUCKET,
-  FIREBASE_MESSAGING_SENDER_ID: process.env.FIREBASE_MESSAGING_SENDER_ID, // if you have this
-  FIREBASE_APP_ID: process.env.FIREBASE_APP_ID,
-},
+
   // Set the production url of your site here
   url: 'https://sunbird-docs.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -63,17 +55,18 @@ customFields: {
       } satisfies Preset.Options,
     ],
   ],
-  // plugins: [[
-  //   "docusaurus2-dotenv",
-  //     {
-  //       path: "./.env",
-  //     systemvars: true
-  //   }
-  // ]],
+  plugins: [[
+    "docusaurus-plugin-dotenv",
+      {
+        path: "./.env",
+      systemvars: true
+    }
+  ]],
 
   themeConfig: {
     // Replace with your project's social card
     image: 'img/sunbird-card.png',
+
     navbar: {
       title: 'Sunbird AI',
       logo: {
