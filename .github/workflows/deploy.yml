@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
+      
       - name: Build website
         env:
           FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
