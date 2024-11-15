@@ -1,18 +1,19 @@
 import React from "react";
-import { logout } from "../theme/firebase";
 import { Power } from "lucide-react";
+//import { logout } from "../theme/firebase";
 
 const LogoutButton = () => {
-  const handleLogout = () => {
-    logout(() => window.location.reload());
-  };
+  // Accept logout as a prop
+  // const handleLogout = () => {
+  //   logout(() => window.location.reload()); // Call the logout function passed as prop
+  // };
 
   return (
     <button
       title="Sign out of your account"
       className="logout__btn"
       style={{ cursor: "pointer" }}
-      onClick={handleLogout}
+      // onClick={handleLogout} // Trigger the logout function when clicked
     >
       <Power size={18} />
     </button>

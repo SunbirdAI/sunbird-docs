@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { signInWithGoogle, auth } from "./firebase";
+import {
+  getAuth,
+  signOut,
+  signInWithPopup,
+  GoogleAuthProvider,
+} from "firebase/auth";
+import { initializeApp } from "firebase/app";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import "../css/login.css";
 import Loading from "./loading";
 
@@ -7,6 +14,50 @@ import Loading from "./loading";
 export default function Root({ children }) {
   const [userAuth, setUserAuth] = useState(false); // To store user authentication status
   const [authLoading, setAuthLoading] = useState(true); // To handle loading state
+
+  const { siteConfig } = useDocusaurusContext(); // Access Docusaurus site config
+
+  // Initialize Firebase app using siteConfig values
+  const app = initializeApp({
+    apiKey: siteConfig.customFields.FIREBASE_API_KEY,
+    authDomain: siteConfig.customFields.FIREBASE_AUTH_DOMAIN,
+    projectId: siteConfig.customFields.FIREBASE_PROJECT_ID,
+    storageBucket: siteConfig.customFields.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: siteConfig.customFields.FIREBASE_MESSAGING_SENDER_ID,
+    appId: siteConfig.customFields.FIREBASE_APP_ID,
+  });
+
+  const auth = getAuth(app);
+  const googleProvider = new GoogleAuthProvider();
+
+  // // Sign out function
+  // const logout = (afterAction = () => {}) => {
+  //   signOut(auth)
+  //     .then(() => {
+  //       afterAction();
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error signing out: ", error);
+  //     });
+  // };
+
+  // Sign-in function
+  const signInWithGoogle = async () => {
+    try {
+      const res = await signInWithPopup(auth, googleProvider);
+      const user = res.user;
+      if (user) {
+        if (user.email.endsWith("@sunbird.ai")) {
+          return { authenticated: true };
+        }
+      }
+      return { authenticated: false };
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+      return { authenticated: false };
+    }
+  };
 
   // UseEffect to subscribe to authentication state changes
   useEffect(() => {
@@ -52,13 +103,13 @@ export default function Root({ children }) {
         <div className="login">
           <div className="login__container">
             <img
-              src="/sunbird-docs/img/logo.png"
+              src="/img/logo.png"
               width={40}
               height={40}
               alt="Sunbird AI logo"
             />
             <button className="login__btn" onClick={handleGoogleSignIn}>
-              <img src="/sunbird-docs/img/google.svg" alt="Google icon" />
+              <img src="/img/google.svg" alt="Google icon" />
               Login with Google
             </button>
           </div>
