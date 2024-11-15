@@ -21,7 +21,7 @@
     "@mdx-js/react": "^3.1.0",
     "clsx": "^2.1.1",
     "docusaurus": "^1.14.7",
-    "docusaurus2-dotenv": "^1.4.0",
+    "docusaurus-plugin-dotenv": "^1.0.1",
     "dotenv": "^16.4.5",
     "firebase": "^11.0.1",
     "lucide-react": "^0.456.0",
