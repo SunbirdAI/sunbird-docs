@@ -11,7 +11,7 @@ const config: Config = {
   url: 'https://sunbird-docs.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/sunbird-docs/',
   trailingSlash: false,
 
   // GitHub pages deployment config.
