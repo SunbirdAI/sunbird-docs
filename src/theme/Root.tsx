@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {
   getAuth,
-  signOut,
+  // signOut,
   signInWithPopup,
   GoogleAuthProvider,
 } from "firebase/auth";
@@ -103,13 +103,13 @@ export default function Root({ children }) {
         <div className="login">
           <div className="login__container">
             <img
-              src="/img/logo.png"
+              src="/sunbird-docs/img/logo.png"
               width={40}
               height={40}
               alt="Sunbird AI logo"
             />
             <button className="login__btn" onClick={handleGoogleSignIn}>
-              <img src="/img/google.svg" alt="Google icon" />
+              <img src="/sunbird-docs/img/google.svg" alt="Google icon" />
               Login with Google
             </button>
           </div>
