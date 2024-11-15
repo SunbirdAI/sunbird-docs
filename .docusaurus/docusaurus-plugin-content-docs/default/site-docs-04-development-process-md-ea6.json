@@ -1,0 +1,25 @@
+{
+  "id": "development-process",
+  "title": "Development Process",
+  "description": "High level (planning phase)",
+  "source": "@site/docs/04-development-process.md",
+  "sourceDirName": ".",
+  "slug": "/development-process",
+  "permalink": "/development-process",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/SunbirdAI/sunbird-docs/docs/04-development-process.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Projects and Repositories",
+    "permalink": "/projects-and-repositories"
+  },
+  "next": {
+    "title": "Release and Deployment",
+    "permalink": "/release-and-deployment"
+  }
+}

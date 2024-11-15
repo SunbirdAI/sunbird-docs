@@ -19,21 +19,23 @@ jobs:
         with:
           node-version: 18
           cache: npm
-          cache-dependency-path: sb-docs/package-lock.json
+          cache-dependency-path: package-lock.json
 
       - name: Install dependencies
-        run: |
-            cd sb-docs
-            npm ci
+        run: npm ci
+        
       - name: Build website
-        run: |
-            cd sb-docs
-            npm run build
+        env:
+          FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
+          FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
+          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+          FIREBASE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
+        run: npm run build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: sb-docs/build
+          path: build
 
   deploy:
     name: Deploy to GitHub Pages
@@ -55,4 +57,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-            path: sb-docs/build
+          path: build

@@ -1,0 +1,25 @@
+{
+  "id": "onboarding",
+  "title": "Onboarding",
+  "description": "1. Meet the team",
+  "source": "@site/docs/02-onboarding.md",
+  "sourceDirName": ".",
+  "slug": "/onboarding",
+  "permalink": "/onboarding",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/SunbirdAI/sunbird-docs/docs/02-onboarding.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sunbird Team",
+    "permalink": "/"
+  },
+  "next": {
+    "title": "Projects and Repositories",
+    "permalink": "/projects-and-repositories"
+  }
+}

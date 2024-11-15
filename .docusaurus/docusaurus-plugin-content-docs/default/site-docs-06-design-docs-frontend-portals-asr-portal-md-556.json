@@ -1,0 +1,24 @@
+{
+  "id": "design-docs/frontend portals/ASR-portal",
+  "title": "Technical Design Document",
+  "description": "Purpose",
+  "source": "@site/docs/06-design-docs/frontend portals/ASR-portal.md",
+  "sourceDirName": "06-design-docs/frontend portals",
+  "slug": "/design-docs/frontend portals/ASR-portal",
+  "permalink": "/design-docs/frontend portals/ASR-portal",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/SunbirdAI/sunbird-docs/docs/06-design-docs/frontend portals/ASR-portal.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "MLOps Strategy and Platform",
+    "permalink": "/design-docs/MLOps/MLOpsPlatform"
+  },
+  "next": {
+    "title": "API Architecture Documentation",
+    "permalink": "/design-docs/language/API_Architecture_Documentation"
+  }
+}
