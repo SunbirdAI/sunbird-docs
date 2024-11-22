@@ -72,3 +72,10 @@ For a description of the projects (including details about the project aims and 
 
 - [Device management/monitoring](https://github.com/SunbirdAI/sunbird-sema)
 - [Device sound capture](https://github.com/SunbirdAI/sbgeneration1audiofeedback)
+
+## AMARA HUB project
+
+- [Amara Hub repo](https://github.com/SunbirdAI/amara_hub)
+- [SRS](https://github.com/SunbirdAI/amara_hub/blob/main/Amara%20Hub%20Docs/srs-document.md)
+  - [Daigram](https://github.com/SunbirdAI/amara_hub/blob/main/Amara%20Hub%20Docs/sequence-diagrams-fixed.md)
+  - [System Architecture](https://github.com/SunbirdAI/amara_hub/blob/main/Amara%20Hub%20Docs/system-architecture.md)
