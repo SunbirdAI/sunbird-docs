@@ -7,7 +7,7 @@ import { auth, signInWithGoogle } from "./firebase";
 export default function Root({ children }) {
   const [userAuth, setUserAuth] = useState(false); // To store user authentication status
   const [authLoading, setAuthLoading] = useState(true); // To handle loading state
-
+  const env = process.env.ENVIRONMENT;
   // UseEffect to subscribe to authentication state changes
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -46,14 +46,14 @@ export default function Root({ children }) {
     <>
       {authLoading ? (
         <Loading /> // Show loading state
-      ) : userAuth ? (
+      ) : (userAuth && env == "production") || env === "development" ? (
         <>{children}</> // Show the children components if user is authenticated
       ) : (
         <div className="login">
           <div className="login__container">
             <img
               src="/sunbird-docs/img/logo.png"
-             className="logo"
+              className="logo"
               alt="Sunbird AI logo"
             />
             <button className="login__btn" onClick={handleGoogleSignIn}>

@@ -10,7 +10,7 @@ export default function ContentWrapper(props: Props): JSX.Element {
   return (
     <>
       <Content {...props} />
-      <LogoutButton  />
+      {process.env.ENVIRONMENT === "production" && <LogoutButton />}
     </>
   );
 }

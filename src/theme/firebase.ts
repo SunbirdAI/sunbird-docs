@@ -1,7 +1,7 @@
 
 import {
     getAuth,
-     signOut,
+    signOut,
     signInWithPopup,
     GoogleAuthProvider,
   } from "firebase/auth";

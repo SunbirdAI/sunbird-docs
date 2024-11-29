@@ -1,6 +1,5 @@
 import React from "react";
 import { Power } from "lucide-react";
-import { signOut } from "firebase/auth";
 import { logout } from "../theme/firebase";
 
 const LogoutButton = () => {
