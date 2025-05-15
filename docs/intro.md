@@ -30,15 +30,11 @@ title: Sunbird Team
   </tr>
   <tr>
     <td>Evelyn Nafula</td>
-    <td>Machine Learning Fellow</td>
+    <td>ML Data engineer</td>
   </tr>
   <tr>
     <td>Patrick Walukagga</td>
     <td>Software Engineer</td>
-  </tr>
-  <tr>
-    <td>Rahman Sanya</td>
-    <td>Research Fellow</td>
   </tr>
   <tr>
     <td>Solomon Nsumba</td>
@@ -61,7 +57,7 @@ title: Sunbird Team
     <td>Operations Manager</td>
   </tr>
   <tr>
-    <td>Daphine Nkunda</td>
+    <td>Janat Namara</td>
     <td>Comms & Engagement Lead</td>
   </tr>
   <tr>
