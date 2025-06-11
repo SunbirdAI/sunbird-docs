@@ -26,20 +26,24 @@ At Sunbird, we believe in:
 Here's a quick look at the main tools and technologies we use:
 
 ### Programming Languages
+
 - **Python**: Our primary language for backend development and data science
 - **JavaScript/TypeScript**: For frontend development
 
 ### Frameworks
+
 - **React**: For building user interfaces
 - **Django**: Python web framework for backend development
 - **FastAPI**: For building APIs quickly
 
 ### Development Tools
+
 - **VS Code**: Our recommended code editor
 - **Git**: For version control and collaboration
 - **Google Colab**: For data science notebooks and examples
 
 ### Communication
+
 - **Google Workspace**: For email, calendar, documents, and meetings
 
 Don't worry if you're not familiar with all of these! We'll help you learn what you need to know.
@@ -58,13 +62,12 @@ Don't worry if you're not familiar with all of these! We'll help you learn what 
 
 Here are some beginner-friendly resources to help you get started:
 
-| Technology | Beginner Resources |
-|------------|-------------------|
-| Python | [Python for Beginners](https://www.python.org/about/gettingstarted/) |
-| JavaScript | [JavaScript.info](https://javascript.info/) |
-| React | [React Tutorial](https://reactjs.org/tutorial/tutorial.html) |
-| Git | [Git Basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) |
-| VS Code | [VS Code Intro](https://code.visualstudio.com/docs/introvideos/basics) |
+| Technology       | Resources                                                                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| API              | [FastAPI](https://fastapi.tiangolo.com/) <br/> [Restful API](https://restfulapi.net/)                                          |
+| Machine Learning | [Google Colab](https://www.youtube.com/watch?v=ucGBQQl9_yE) <br/> [Salt Publication](https://openreview.net/pdf?id=vaxG0WAPzL) |
+| Django           | [Django tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django)                                           |
+| Git              | [Git by w3schools](https://www.w3schools.com/git/)<br/> [Git tutorial](https://www.atlassian.com/git/tutorials)                |
 
 ## Communication Platforms
 
@@ -80,6 +83,7 @@ We use Google Workspace for all our communication needs:
 ### Meeting Schedule
 
 We have several regular meetings you'll be part of:
+
 - **Team Sync**: Mondays at 4:00 PM - Overview of weekly goals and progress
 - **Software Engineering Sync**: Tuesdays at 4:00 PM - Technical discussions
 - **Sunbird Sync**: Fridays at 4:00 PM - End-of-week updates and planning
